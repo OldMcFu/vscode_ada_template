@@ -4,6 +4,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update -y
+
 RUN apt-get upgrade -y
 RUN apt-get install -y  make \
                         gnat \
@@ -12,9 +13,9 @@ RUN apt-get install -y  make \
                         git \
                         gdb \
                         gprbuild \
-                        libc6-dev
+                        libc6-dev \
+                        python3
 
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get purge --auto-remove
 RUN apt-get clean
-

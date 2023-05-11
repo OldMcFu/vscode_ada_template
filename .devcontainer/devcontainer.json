@@ -1,4 +1,5 @@
 {
     "build": { "dockerfile": "Dockerfile" },
-    "extensions": ["adacore.ada", "webfreak.debug"]
+    "runArgs": ["--privileged"],
+    "extensions": ["adacore.ada", "webfreak.debug", "ms-python.python"]
 }
